@@ -43,7 +43,7 @@ const TPL = `
         z-index: 100;
         position: absolute;
         bottom: 0;
-        display: flex;
+        display: inline;
         align-items: flex-end;
         justify-content: flex-end;
         right: 11.77px;
