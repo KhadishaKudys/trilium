@@ -28,6 +28,7 @@ const TPL = `
         font-size: var(--tree-font-size);
         position: relative;
         min-height: 0;
+        margin-top: 50px;
     }
     
     .tree {

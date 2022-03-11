@@ -12,6 +12,7 @@ const TPL = `
     .quick-search {
         padding: 10px 10px 10px 0px;
         height: 50px;
+        position: absolute;
     }
     
     .quick-search button, .quick-search input {
