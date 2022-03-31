@@ -2,7 +2,7 @@ import NoteContextAwareWidget from "../note_context_aware_widget.js";
 import keyboardActionsService from "../../services/keyboard_actions.js";
 
 const TPL = `<span class="button-widget icon-action bx"
-      data-toggle="tooltip"
+      data-toggle="tooltip" 
       title=""></span>`;
 
 let actions;
