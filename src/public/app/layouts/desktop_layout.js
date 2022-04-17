@@ -45,6 +45,7 @@ import EditedNotesWidget from "../widgets/ribbon_widgets/edited_notes.js";
 import OpenNoteButtonWidget from "../widgets/buttons/open_note_button_widget.js";
 import MermaidWidget from "../widgets/mermaid.js";
 import BookmarkButtons from "../widgets/bookmark_buttons.js";
+import BookmarksTree  from "../services/bookmarks_tree.js";
 import NoteWrapperWidget from "../widgets/note_wrapper.js";
 import BacklinksWidget from "../widgets/backlinks.js";
 import SharedInfoWidget from "../widgets/shared_info.js";
@@ -86,7 +87,7 @@ export default class DesktopLayout {
                 .child(new FlexContainer("column")
                     .id("plugin-buttons")
                     .contentSized())
-                .child(new BookmarkButtons())
+                // .child(new BookmarkButtons())
                 .child(new SpacerWidget(0, 1000))
                 .child(new ProtectedSessionStatusWidget())
                 .child(new SyncStatusWidget())
@@ -94,6 +95,7 @@ export default class DesktopLayout {
             )
             .child(new LeftPaneContainer()
                 .child(new QuickSearchWidget())
+                .child(new BookmarkButtons())
                 .child(appContext.mainTreeWidget)
                 .child(...this.customWidgets.get('left-pane'))
             )
